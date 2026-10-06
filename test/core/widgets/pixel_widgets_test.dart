@@ -30,11 +30,12 @@ void main() {
     });
 
     testWidgets('target sentuh minimal 48dp', (tester) async {
-      await tester.pumpWidget(
-        wrap(PixelButton(label: 'OK', onPressed: () {})),
-      );
+      await tester.pumpWidget(wrap(PixelButton(label: 'OK', onPressed: () {})));
 
-      expect(tester.getSize(find.byType(PixelButton)).height, greaterThanOrEqualTo(48));
+      expect(
+        tester.getSize(find.byType(PixelButton)).height,
+        greaterThanOrEqualTo(48),
+      );
     });
 
     testWidgets('nonaktif tidak crash saat di-tap', (tester) async {

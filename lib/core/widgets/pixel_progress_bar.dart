@@ -20,7 +20,9 @@ class PixelProgressBar extends StatelessWidget {
 
   /// Jumlah segmen terisi untuk [value] tertentu (nilai dibatasi 0..1).
   static int filledSegments(double value, int segments) {
-    final safe = value.isNaN ? 0.0 : (value < 0 ? 0.0 : (value > 1 ? 1.0 : value));
+    final safe = value.isNaN
+        ? 0.0
+        : (value < 0 ? 0.0 : (value > 1 ? 1.0 : value));
     return (safe * segments).floor();
   }
 

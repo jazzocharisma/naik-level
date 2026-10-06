@@ -14,8 +14,10 @@ double contrastRatio(Color a, Color b) {
 void main() {
   group('Kontras warna (WCAG AA >= 4.5)', () {
     final pairs = <String, (Color, Color)>{
-      'teks utama di background':
-          (PixelColors.textPrimary, PixelColors.background),
+      'teks utama di background': (
+        PixelColors.textPrimary,
+        PixelColors.background,
+      ),
       'teks utama di surface': (PixelColors.textPrimary, PixelColors.surface),
       'teks redup di surface': (PixelColors.textMuted, PixelColors.surface),
       'emas di background': (PixelColors.gold, PixelColors.background),

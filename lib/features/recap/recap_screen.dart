@@ -5,6 +5,5 @@ class RecapScreen extends StatelessWidget {
   const RecapScreen({super.key});
 
   @override
-  Widget build(BuildContext context) =>
-      const PlaceholderScreen(title: 'Recap');
+  Widget build(BuildContext context) => const PlaceholderScreen(title: 'Recap');
 }
